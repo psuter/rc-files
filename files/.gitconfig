@@ -1,0 +1,21 @@
+[user]
+	name = Philippe Suter
+	email = philippe.suter@gmail.com
+
+[alias]
+        ci = commit
+        co = checkout
+        st = status
+        llog = log --date=local
+        sci = svn dcommit
+        sup = svn rebase
+
+[color]
+        ui = true
+        log = auto
+        diff = auto
+        branch = auto
+
+[tig]
+        show-date = local
+

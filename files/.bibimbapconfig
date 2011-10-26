@@ -1,0 +1,13 @@
+# Config file for Bibimbap.
+[general]
+    url.open = gnome-open
+    bib.filename = managed.bib     
+
+[dblp]
+    db.type     = MySQL
+#    db.dsn      = jdbc:mysql://localhost/larabib
+#    db.username = larabib
+#    db.password = Vk23Jn9wK
+    db.dsn      = jdbc:mysql://laraserver.epfl.ch/larabib
+    db.username = larabibuser
+    db.password = B2mKjaplc     

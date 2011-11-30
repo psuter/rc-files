@@ -18,6 +18,14 @@ set smarttab
 
 filetype indent on
 
+augroup filetype
+    au! BufRead,BufNewFile *.ll   set filetype=llvm
+augroup END
+
+augroup filetype
+    au! BufRead,BufNewFile *.td   set filetype=tablegen
+augroup END
+
 fun BenIndent()
     let oldLine=line('.')
     normal(gg=G)

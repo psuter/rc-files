@@ -16,29 +16,13 @@ set et
 set sw=4
 set smarttab
 
-filetype indent on
-
-augroup filetype
-    au! BufRead,BufNewFile *.ll   set filetype=llvm
-augroup END
-
-augroup filetype
-    au! BufRead,BufNewFile *.td   set filetype=tablegen
-augroup END
-
-fun BenIndent()
-    let oldLine=line('.')
-    normal(gg=G)
-    execute ':' . oldLine
-endfun
-map -- :call BenIndent()<cr> 
-" /Indentation stuff
-
-" map control-backspace to delete the previous word (only works with gvim)
-" :imap <C-BS> <C-W>
-
-" may make some extra add-ons work.
-" set runtimepath+=/usr/share/vim/addons
-
 " that loads the appropriate plugin for LaTeX, for instance
 filetype plugin on
+
+" feeling brave.
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+noremap <End> <nop>
+noremap <Home> <nop>

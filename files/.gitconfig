@@ -18,3 +18,5 @@
 
 [tig]
     show-date = yes
+[merge]
+	tool = vimdiff

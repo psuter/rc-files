@@ -1,0 +1,6 @@
+#!/bin/bash
+
+C=${HOME}/c
+rm -f $C
+ln -s `pwd -P` $C
+

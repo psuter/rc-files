@@ -1,0 +1,4 @@
+#!/bin/bash
+
+TEMPDIR=$(mktemp -d XXXXXXXX)
+cd ${TEMPDIR}

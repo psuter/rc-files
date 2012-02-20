@@ -14,3 +14,4 @@ for tl in ${tolink}; do
 done
 
 echo "** Make sure to include $currentdir/scripts in your PATH variable ! **"
+

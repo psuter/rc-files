@@ -1,4 +1,7 @@
 #!/bin/bash
 
 TEMPDIR=$(mktemp -dt XXXXXXXX)
+
+ln -s ${TEMPDIR} "${HOME}/t"
+
 cd ${TEMPDIR}

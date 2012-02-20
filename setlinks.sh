@@ -12,3 +12,5 @@ for tl in ${tolink}; do
         ln -s "${currentdir}/files/${tl}" "${HOME}/${tl}"
     fi
 done
+
+echo "** Make sure to include $currentdir/scripts in your PATH variable ! **"

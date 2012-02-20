@@ -1,4 +1,4 @@
 #!/bin/bash
 
-TEMPDIR=$(mktemp -d XXXXXXXX)
+TEMPDIR=$(mktemp -dt XXXXXXXX)
 cd ${TEMPDIR}

@@ -1,7 +1,17 @@
 #!/bin/bash
 
 TEMPDIR=$(mktemp -dt XXXXXXXX)
+HOMET="${HOME}/t"
 
-ln -s ${TEMPDIR} "${HOME}/t"
+if [[ -e "${HOMET}" ]] ; then
+    if [[ -h "${HOMET}" ]] ; then
+        rm "${HOMET}"
+        ln -s "${TEMPDIR}" "${HOMET}"
+    else
+        echo "${HOMET} exists and is not a symlink."
+    fi
+else
+    ln -s ${TEMPDIR} ${HOMET}
+fi
 
 cd ${TEMPDIR}

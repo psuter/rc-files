@@ -1,6 +1,6 @@
 #!/bin/sh
 
-tolink=".vimrc .vim .tmux.conf .gitconfig .bibimbapconfig"
+tolink=".vimrc .vim .tmux.conf .gitconfig .bibimbapconfig .todorc .morebashrc"
 
 currentdir="$( cd "$( dirname "$0" )" && pwd )"
 

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# resolving symlinks
+SCRIPT="${BASH_SOURCE[0]}"
+if ([ -h "${SCRIPT}" ]) then
+  while ([ -h "${SCRIPT}" ]) do
+    SCRIPT=`readlink "${SCRIPT}"`
+  done
+fi
+
+pushd . > /dev/null
+cd `dirname ${SCRIPT}` > /dev/null
+HERE=`pwd`;
+popd  > /dev/null
+
+export PATH=${PATH}:${HERE}/../scripts
+
+complete -F _command silent
+
+export SVN_EDITOR=vim
+export VISUAL=vim
+export EDITOR=vim
+
+export GIT_PS1_SHOWDIRTYSTATE=true
+export PS1='${debian_chroot:+($debian_chroot)}\[\033[00;36m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 " \[\033[01;35m\][%s]\[\033[00m\]") \$ '

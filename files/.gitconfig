@@ -3,6 +3,7 @@
     email = philippe.suter@gmail.com
 
 [alias]
+    ba = branch -a
     ci = commit
     co = checkout
     st = status

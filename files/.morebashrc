@@ -24,4 +24,15 @@ export EDITOR=vim
 export GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='${debian_chroot:+($debian_chroot)}\[\033[00;36m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 " \[\033[01;35m\][%s]\[\033[00m\]") \$ '
 
-alias todo="todo -G"
+function todo() {
+  cd ~/.todo || return 1;
+  l=$(ls -1t|head -n1);
+  t=$(date +%Y%m%d);
+  if [[ "$1" == "last" ]]; then
+    cp $l $t;
+  fi
+  ${EDITOR:-vi} $t;
+  cd -;
+}
+
+

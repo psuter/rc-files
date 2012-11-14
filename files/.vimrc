@@ -26,3 +26,6 @@ noremap <Left> <nop>
 noremap <Right> <nop>
 noremap <End> <nop>
 noremap <Home> <nop>
+
+" completion is Bash-like
+set wildmode=longest,list

@@ -3,11 +3,12 @@
     email = philippe.suter@gmail.com
 
 [alias]
-    ba = branch -a
+    pull = pull --ff-only
+    ba = branch --all
+    fap = fetch --all --prune
     ci = commit
     co = checkout
     st = status
-    llog = log --date=local
     sci = svn dcommit
     sup = svn rebase
 

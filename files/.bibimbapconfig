@@ -1,7 +1,7 @@
-# Config file for Bibimbap.
 [general]
     url.open = gnome-open
     bib.filename = managed.bib     
+    dir.cache = /home/psuter/.bibimbap/cache
 
 [dblp]
     db.type     = MySQL

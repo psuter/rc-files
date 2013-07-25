@@ -29,3 +29,8 @@ noremap <Home> <nop>
 
 " completion is Bash-like
 set wildmode=longest,list
+
+" Coq stuff
+let CoqIDE_coqtop = "/home/psuter/bin/coqtop"
+let g:CoqIDEDefaultMap = 1
+

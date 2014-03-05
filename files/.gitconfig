@@ -11,6 +11,7 @@
     st = status
     sci = svn dcommit
     sup = svn rebase
+    wdiff = diff --word-diff
 
 [color]
     ui = true
@@ -19,6 +20,7 @@
     branch = auto
 
 [tig]
-    show-date = yes
+    show-date = local
+
 [merge]
 	tool = vimdiff

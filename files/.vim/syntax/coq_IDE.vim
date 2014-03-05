@@ -42,7 +42,7 @@ syn cluster coqVernac contains=coqRequire,coqCheck,coqEval,coqNotation,coqTacNot
 syn match   coqError             "\S\+"
 syn match   coqVernacPunctuation ":=\|\.\|:"
 syn match   coqIdent             contained "[_[:alpha:]][_'[:alnum:]]*"
-syn keyword coqTopLevel          Declare Module Type Canonical Structure Cd Coercion Derive Drop Existential
+syn keyword coqTopLevel          Declare Module Type Canonical Structure Cd Coercion Derive Drop Existential Class Instance
 "...
 syn keyword coqVernacCmd         Functional Scheme Back Combined
 syn keyword coqFeedback          Show About Print

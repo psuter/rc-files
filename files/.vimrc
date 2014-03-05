@@ -1,7 +1,6 @@
 syntax on
 
-:set ignorecase
-:set smartcase
+":set smartcase
 
 " copied from .vim/syntax/scala.vim
 " you might like to put these lines in your .vimrc
@@ -34,3 +33,4 @@ set wildmode=longest,list
 let CoqIDE_coqtop = "/home/psuter/bin/coqtop"
 let g:CoqIDEDefaultMap = 1
 
+" autocmd FileType make setlocal noexpandtab
